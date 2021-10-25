@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    
+    <section class="container">
+        <canvas class="drawing-zone" id="drawingZone"></canvas>
+        <div class="controls"> 
+            <ul>
+                <li>
+                    <button class="clearBtn"><i class="fa fa-eraser" style="font-size:36px;"></i></button>
+                </li>
+                <li>
+                    <button class="downloadBtn"><i class="fa fa-file-text-o" style="font-size:36px;"></i></button>
+                </li>
+                <li>
+                    <button class="imgBtn"><i class="fa fa-image" style="font-size:36px"></i></button>
+                </li>
+                <li>
+                    <button class="timeBtn"><i class="fa fa-clock-o" style="font-size:36px"></i></button>
+                </li>
+                <li>
+                    <input type="color" class="colorpicker">
+                </li>
+                <li>
+                    <button class="saveBtn">save</button>
+                </li>
+                <li>
+                    <select name="size" class="size">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                      </select>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="assets/js/paint.js"></script>
+</body>
+</html>

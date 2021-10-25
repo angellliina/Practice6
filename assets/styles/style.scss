@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Scheherazade New', serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 1.5rem;
+    width: 100%;
+    background-color: azure;
+
+    .drawing-zone {
+        height: 90vh;
+        width: 90%;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+    
+    .controls {
+        height: 90vh;
+        width: 10%;
+        height: inherit;   
+
+        ul {
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            button, select {
+                font-size: 1.2rem;
+                padding: .5rem;
+                border: none;
+                border-radius: 10px;
+                background-color: crimson;
+                color: white;
+                cursor: pointer;
+            }
+
+        }
+
+    }
+
+}
